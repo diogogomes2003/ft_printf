@@ -6,13 +6,13 @@
 #    By: dduarte- <dduarte-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/28 08:43:18 by dduarte-          #+#    #+#              #
-#    Updated: 2023/04/28 09:01:04 by dduarte-         ###   ########.fr        #
+#    Updated: 2023/04/28 10:36:49 by dduarte-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = 			libftprintf.a
 
-SRC = 			ft_printfutils.c
+SRC = 			ft_printfutils.c ft_printf_hex.c ft_printf_ptr.c
 
 OBJS = 			$(SRC.c=.o)
 
