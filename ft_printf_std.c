@@ -6,7 +6,7 @@
 /*   By: dduarte- <dduarte-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 08:56:20 by dduarte-          #+#    #+#             */
-/*   Updated: 2023/05/02 09:02:15 by dduarte-         ###   ########.fr       */
+/*   Updated: 2023/05/02 13:07:08 by dduarte-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,5 @@ int	ft_printnbr(int num)
 
 int	ft_printpercent(void)
 {
-	return (write(1, &"%", 1));
+	return (write(1, "%", 1));
 }
