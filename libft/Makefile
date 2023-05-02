@@ -6,7 +6,7 @@
 #    By: dduarte- <dduarte-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/12 14:30:19 by dduarte-          #+#    #+#              #
-#    Updated: 2023/04/27 12:33:16 by dduarte-         ###   ########.fr        #
+#    Updated: 2023/05/02 12:17:16 by dduarte-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ OBJS = ${SRC:.c=.o}
 OBJSB = ${SRCB:.c=.o}
 HEADER = libft.h
 INCLUDE = -I include
-CC = gcc
+CC = cc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 .c.o:
