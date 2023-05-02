@@ -6,11 +6,10 @@
 /*   By: dduarte- <dduarte-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 09:48:24 by dduarte-          #+#    #+#             */
-/*   Updated: 2023/04/28 10:34:29 by dduarte-         ###   ########.fr       */
+/*   Updated: 2023/05/02 09:09:45 by dduarte-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include "ft_printf.h"
 
 int	ft_hex_len(unsigned int n)

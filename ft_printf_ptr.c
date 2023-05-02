@@ -6,11 +6,13 @@
 /*   By: dduarte- <dduarte-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 10:36:10 by dduarte-          #+#    #+#             */
-/*   Updated: 2023/04/28 11:00:52 by dduarte-         ###   ########.fr       */
+/*   Updated: 2023/05/02 12:09:55 by dduarte-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_ptr_len(uintptr_t n)
+#include "ft_printf.h"
+
+int	ft_ptr_len(unsigned long n)
 {
 	unsigned int	len;
 
@@ -23,12 +25,12 @@ int	ft_ptr_len(uintptr_t n)
 	return (len);
 }
 
-void	ft_put_ptr(uintptr_t n)
+void	ft_put_ptr(unsigned long n)
 {
 	if (n >= 16)
 	{
-		ft_put_ptr(n / 16, format);
-		ft_put_ptr(n % 16, format);
+		ft_put_ptr(n / 16);
+		ft_put_ptr(n % 16);
 	}
 	else
 	{
@@ -41,18 +43,9 @@ void	ft_put_ptr(uintptr_t n)
 
 int	ft_print_ptr(unsigned long long ptr)
 {
-	int	print_len;
-
-	print_len = 0;
-	print_len = print_len + write(1, "0x", 2);
 	if (ptr == 0)
-	{
-		print_len = print_len + write(1, "0", 1);
-	}
-	else
-	{
-		ft_put_ptr(ptr);
-		print_len += ft_ptr_len(ptr);
-	}
-	return (print_len);
+		return (write(1, "(nil)", 5));
+	write(1, "0x", 2);
+	ft_put_ptr(ptr);
+	return (ft_ptr_len(ptr) + 2);
 }
