@@ -6,7 +6,7 @@
 #    By: dduarte- <dduarte-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/28 08:43:18 by dduarte-          #+#    #+#              #
-#    Updated: 2023/05/02 09:01:25 by dduarte-         ###   ########.fr        #
+#    Updated: 2023/05/03 09:24:13 by dduarte-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,4 +44,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
